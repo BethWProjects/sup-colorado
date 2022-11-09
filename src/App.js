@@ -25,7 +25,7 @@ class App extends Component {
           this.setState({ destinations: data.destination, loading:false });
         } catch {
           this.setState({
-          error: "Sorry, no paths available. Take a stroll around the block and try again!",
+          error: "Sorry, no paddle locations available.  Please try again another time!",
           });
         }
       };
@@ -49,6 +49,8 @@ class App extends Component {
               />
               </div>
               )}
+              />
+              <Route path='/:id' render={({ match }) => <SUPDetails destId={match.params.id} />}
               />
               </Switch>
           </BrowserRouter>
