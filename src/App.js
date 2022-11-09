@@ -1,14 +1,18 @@
 import React, { Component } from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import './App.css';
 import Nav from './Nav/Nav';
+import Filter from './Filter/Filter';
 import Destinations from './Destinations/Destinations';
+import SUPDetails from './SUPDetails/SUPdetails';
 import { fetchDestinations } from './apiCalls';
 
 class App extends Component {
     constructor() {
         super()
         this.state = {
-            destinations: []
+            destinations: [], 
+            filteredDestination: ''
         }
     }
 
@@ -26,13 +30,28 @@ class App extends Component {
         }
       };
 
+      filteredDestination = (input) => {
+        this.setState({ filteredDestination: input})
+      }
+
     render() {
         return(
             <div>
               <Nav />
-              <Destinations 
+           <BrowserRouter>
+           <Switch>
+              <Route exact path='/' render={() => (
+                <div>
+                <Filter filteredDestination={this.filteredDestination}/>
+                <Destinations 
                 destinations={this.state.destinations}
+                filteredDestination={this.state.filteredDestination}
               />
+              </div>
+              )}
+              />
+              </Switch>
+          </BrowserRouter>
             </div>
         )
     }
