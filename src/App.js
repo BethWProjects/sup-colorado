@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css';
+import Nav from './Nav/Nav';
 import Destinations from './Destinations/Destinations';
 import { fetchDestinations } from './apiCalls';
 
@@ -28,6 +29,7 @@ class App extends Component {
     render() {
         return(
             <div>
+              <Nav />
               <Destinations 
                 destinations={this.state.destinations}
               />
