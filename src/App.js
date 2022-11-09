@@ -21,7 +21,7 @@ class App extends Component {
         try {
           const pathList = await fetchDestinations();
           const data = await pathList.json();
-          console.log('test', data)
+          // console.log('test', data)
           this.setState({ destinations: data.destination, loading:false });
         } catch {
           this.setState({

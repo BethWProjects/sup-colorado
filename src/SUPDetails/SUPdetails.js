@@ -14,7 +14,8 @@ class SUPDetails extends Component {
     componentDidMount = async () => {
         try { const destList = await fetchDestinations();
             const data = await destList.json();
-            const destMatch = await data.find(dest => dest.id === Number(this.props.pathId));
+            console.log("supdetails", data)
+            const destMatch = await data.destination.find(dest => dest.id === Number(this.props.destId));
             this.setState({ destination: destMatch, loading: false })   
         } catch (error) {
             this.setState({ error: "Sorry, no paddle locations available.  Please try again another time!"})
@@ -26,8 +27,12 @@ class SUPDetails extends Component {
       }
 
     render() {
+        const dest = this.state.destination;
         return (
-            <div>SUPDetails</div>
+            <div className='dest-details-container'>
+                <h1>SUP Colorado</h1>
+                <h3>{this.state.destination.title}</h3>
+            </div>
         )
 
     }
