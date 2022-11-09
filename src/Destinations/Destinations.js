@@ -3,9 +3,16 @@ import Card from '../Card/Card'
 import './Destinations.css'
 
 
-const Destinations = ( { destinations }) => {
+const Destinations = ( { destinations, filteredDestination }) => {
+    let destCards;
 
-    const destinationData = destinations.map((dest) => {
+    if (filteredDestination !== '') {
+        destCards = destinations.filter((dest) => dest.type.toLowerCase().includes(filteredDestination))
+    } else {
+        destCards = destinations
+    }
+
+    const destinationData = destCards.map((dest) => {
         return (
             <Card 
                 id={dest.id}
