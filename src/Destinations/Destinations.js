@@ -1,35 +1,31 @@
-import React, { Component } from 'react'
+import React from 'react'
+import Card from '../Card/Card'
 import './Destinations.css'
-import { fetchDestinations } from '../apiCalls'
-
-class Destinations extends Component {
-    constructor() {
-        super()
-        this.state = {
-            reservations: []
-        }
-    }
 
 
-    componentDidMount = async () => {
-        this.setState({ loading: true });
-        try {
-          const pathList = await fetchDestinations();
-          const data = await pathList.json();
-          console.log('test', data)
-          this.setState({ reservations: data, loading:false });
-        } catch {
-          this.setState({
-          error: "Sorry, no paths available. Take a stroll around the block and try again!",
-          });
-        }
-      };
+const Destinations = ( { destinations }) => {
 
-    render() {
-        return(
-            <div></div>
+    const destinationData = destinations.map((dest) => {
+        return (
+            <Card 
+                id={dest.id}
+                key={dest.id}
+                title={dest.title}
+                image={dest.image}
+                overview={dest.overview}
+                type={dest.type}
+                petsAllowed={dest.petsAllowed}
+                motorBoatAllowed={dest.motorBoatAllowed}
+                cost={dest.cost}
+                location={dest.location}
+                drivetimeFromDenver={dest.drivetimeFromDenver}
+
+
+            />
         )
-    }
+    });
+    return <div className='destinations-container'>{destinationData}</div>
 }
+
 
 export default Destinations
