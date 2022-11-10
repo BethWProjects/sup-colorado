@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card'
+import PropTypes from 'prop-types'
 import './Destinations.css'
 
 
@@ -36,3 +37,8 @@ const Destinations = ( { destinations, filteredDestination }) => {
 
 
 export default Destinations
+
+Destinations.propTypes = {
+    destinations: PropTypes.array,
+    filteredDestination: PropTypes.string
+}
