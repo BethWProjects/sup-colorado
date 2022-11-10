@@ -24,3 +24,4 @@ Please describe the tests that you ran to verify your changes.
 - [ ]  New and existing unit tests pass locally with my changes
 - [ ]  Is your code D.R.Y?
 - [ ]  Does it follow SRP?
+- [ ]  Does it pass Accessibility?
