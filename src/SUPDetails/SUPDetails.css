@@ -16,7 +16,7 @@
     align-items: center;
     margin-top: 1vh;
     margin-bottom: 1vh;
-    background-color: #BBDFE0;
+    background-color: #EDEAEB;
     border: 2px solid #609998;
   }
   
@@ -26,7 +26,8 @@
     align-items: center;
     font-family: 'ABeeZee', sans-serif;
     width: 40vw;
-    margin-left: 2rem;;
+    margin-left: 2rem;
+    margin-bottom: 1vh;
   }
 
   .overview-container {
@@ -35,9 +36,7 @@
 
   .image-container {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
   }
 
   .details-image{
@@ -46,9 +45,6 @@
     width: 80vw;
     height: 35vh;
     object-fit: cover;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    z-index: 2;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
   
@@ -61,7 +57,7 @@
   .details-title {
     margin-bottom: 1vh;
     margin-top: 2vh;
-    font-size: 4vw;
+    font-size: 3vw;
     font-family: 'Patrick Hand SC', cursive;
   }
     
@@ -127,37 +123,53 @@
     transform: translateY(2px);
   }
   
-  @media only screen and (min-width:300px) and (max-width:675px) {
-    .dest-details-container {
-      margin-top: 1vh;
-    }
+  /* @media only screen and (min-width:300px) and (max-width:675px) {
+
     .details-image {
-        width: 80vw;
+        width: 90vw;
         height: 35vh;
         object-fit: cover;
     }    
-  }
+  } */
   
-  @media only screen and (max-height:700px) {
-    
-  .hidden {
-    display: none;
-  }
-  
+  @media only screen and (min-width: 270px) and (max-width:700px) {
+     
   .dest-details-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    margin-bottom: 60px;
     margin-top: 1vh;
-    position: relative;
-    background-color: #249EA0;
-    z-index: 1;
     border: 2px solid #609998;
     }
+
+    .details-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-family: 'ABeeZee', sans-serif;
+      width: 75vw;
+      margin-bottom: 1vh;
+    }
+
+    .details-title {
+      margin-bottom: 2vh;
+      margin-top: 2vh;
+      font-size: 6vw;
+      font-family: 'Patrick Hand SC', cursive;
+    }
+
+    .details-overview {
+      margin-left: 1vw;
+      margin-right: 1vw;
+      font-family: 'ABeeZee', sans-serif;
+    }
+
+    .overview-container {
+      width: 80vw;
+    }
+
+    .details-image {
+      width: 90vw;
+      height: 35vh;
+      object-fit: cover;
+  }    
   }    
     
   
