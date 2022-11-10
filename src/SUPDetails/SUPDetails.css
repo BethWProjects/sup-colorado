@@ -4,13 +4,14 @@
     justify-content: center;
     align-items: center;
     margin: 1rem;
-    background-color: #94b3b6;
+    background-color: #249EA0;
     border: 2px solid #609998;
   }
   
   .details-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 1vh;
@@ -22,13 +23,14 @@
   .details-section {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     font-family: 'ABeeZee', sans-serif;
-    width: 30vw;
+    width: 40vw;
+    margin-left: 2rem;;
   }
 
   .overview-container {
-    width: 30vw;
+    width: 45vw;
   }
 
   .image-container {
@@ -41,11 +43,11 @@
   .details-image{
     display: flex;
     align-items: center;
-    width: 65%;
-    height: 35%;
+    width: 80vw;
+    height: 35vh;
     object-fit: cover;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
     z-index: 2;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   }
@@ -59,10 +61,21 @@
   .details-title {
     margin-bottom: 1vh;
     margin-top: 2vh;
-    font-size: 5vw;
+    font-size: 4vw;
     font-family: 'Patrick Hand SC', cursive;
   }
     
+  .details-title, 
+  .details-type, 
+  .details-pets,
+  .details-boats,
+  .details-cost, 
+  .details-location,
+  .details-drive {
+    margin: 2px;
+  }
+
+
   .details-home-button{
     font-size: 24px;
     margin-top: 2vh;
@@ -119,8 +132,8 @@
       margin-top: 1vh;
     }
     .details-image {
-        width: 85%;
-        height: 40%;
+        width: 80vw;
+        height: 35vh;
         object-fit: cover;
     }    
   }
@@ -141,7 +154,7 @@
     margin-bottom: 60px;
     margin-top: 1vh;
     position: relative;
-    background-color: #BBDFE0;
+    background-color: #249EA0;
     z-index: 1;
     border: 2px solid #609998;
     }
