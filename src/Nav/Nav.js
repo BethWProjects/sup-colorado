@@ -1,6 +1,6 @@
 import React from 'react'
 import './Nav.css'
-import paddleLogo from '../images/paddleboard.svg'
+import paddleLogo from '../images/paddleboard.png'
 
 
 const Nav = () => {

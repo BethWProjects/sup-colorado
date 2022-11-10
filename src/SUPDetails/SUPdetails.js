@@ -40,7 +40,7 @@ class SUPDetails extends Component {
           </div>
           <div className="details-container">
             <div className="details-section">
-              <h3 className="details-title">{dest.title}</h3>
+              <h1 className="details-title">{dest.title}</h1>
               <p className="details-location"><strong>Location</strong> - {dest.location}</p>
               <p className="details-drive">
                 <strong>Drive time from Denver</strong> - {dest.driveTimeFromDenver}
@@ -58,7 +58,7 @@ class SUPDetails extends Component {
           </div>
         </div>
         <div className="image-container">
-          <img className="details-image" src={dest.image} />
+          <img className="details-image" src={dest.image} alt={`Paddleboarding the open water at ${dest.title}`}/>
         </div>
       </div>
     );
