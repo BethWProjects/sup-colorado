@@ -1,6 +1,6 @@
 .paddleLogo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -15,8 +15,8 @@
 
 .title {
     margin-bottom: 1vh;
-    margin-top: 1vh;
-    font-size: 5vw;
+    margin-top: 2vh;
+    font-size: 3vw;
     font-family: 'Patrick Hand SC', cursive;
     text-align: center;
 }
