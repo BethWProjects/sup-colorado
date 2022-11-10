@@ -32,23 +32,27 @@ class SUPDetails extends Component {
             <div className='details'>
             <div className='dest-details-container'>
                 <div className='image-container'>
-                    <img className='details-image' src={dest.image}/>
                     <Link to={'/'}>
                         <button className='details-home-button'>Home</button>
                     </Link>
                 </div>
                 <div className='details-container'>
-                    <h3 className='details-title'>{dest.title}</h3>
-                    <p className='details-type'>Type - {dest.type}</p>
-                    <p className='details-pets'>Pets Allowed? - {dest.petsAllowed}</p>
-                    <p className='details-boats'>Motorboats Allowed? - {dest.motorBoatsAllowed}</p>
-                    <p className='details-cost'>Cost - {dest.cost}</p>
-                    <p className='details-location'>Location - {dest.location}</p>
-                    <p className='details-drive'>Drive time from Denver {dest.driveTimeFromDenver}</p>
+                    <div className='details-section'>
+                        <h3 className='details-title'>{dest.title}</h3>
+                        <p className='details-type'>Type - {dest.type}</p>
+                        <p className='details-pets'>Pets Allowed? - {dest.petsAllowed}</p>
+                        <p className='details-boats'>Motorboats Allowed? - {dest.motorBoatsAllowed}</p>
+                        <p className='details-cost'>Cost - {dest.cost}</p>
+                        <p className='details-location'>Location - {dest.location}</p>
+                        <p className='details-drive'>Drive time from Denver {dest.driveTimeFromDenver}</p>
+                    </div>
+                    <div className='overview-container'>
+                        <p className='details-overview'>{dest.overview}</p>
+                    </div>
                 </div>
                
             </div>
-                <p className='details-overview'>{dest.overview}</p>
+                <img className='details-image' src={dest.image}/>
             </div>
         )
 
