@@ -24,7 +24,11 @@
     flex-direction: column;
     align-items: flex-start;
     font-family: 'ABeeZee', sans-serif;
-    width: 30rem;
+    width: 30vw;
+  }
+
+  .overview-container {
+    width: 30vw;
   }
 
   .image-container {
@@ -47,9 +51,8 @@
   }
   
   .details-overview {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 5vh;
+    margin-left: 2vw;
+    margin-right: 3vw;
     font-family: 'ABeeZee', sans-serif;
   }
   
@@ -59,19 +62,6 @@
     font-size: 5vw;
     font-family: 'Patrick Hand SC', cursive;
   }
-  
-  /* .details-type,
-  .details-location, 
-  .details-pets,
-  .details-boats,
-  .details-cost,
-  .details-drive {
-    margin-left: 15vw;
-    margin-right: 15vw;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: 'ABeeZee', sans-serif;
-  } */
     
   .details-home-button{
     font-size: 24px;

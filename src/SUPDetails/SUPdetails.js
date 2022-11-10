@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { fetchDestinations } from '../apiCalls'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 import './SUPDetails.css'
 
 class SUPDetails extends Component {
@@ -14,7 +15,6 @@ class SUPDetails extends Component {
     componentDidMount = async () => {
         try { const destList = await fetchDestinations();
             const data = await destList.json();
-            console.log("supdetails", data)
             const destMatch = await data.destination.find(dest => dest.id === Number(this.props.destId));
             this.setState({ destination: destMatch, loading: false })   
         } catch (error) {
@@ -22,9 +22,7 @@ class SUPDetails extends Component {
         }
     }
 
-    filteredDestination = (input) => {
-        this.setState({ filteredDestination: input})
-      }
+
 
     render() {
         const dest = this.state.destination;
@@ -60,3 +58,7 @@ class SUPDetails extends Component {
 }
 
 export default SUPDetails
+
+SUPDetails.propTypes = {
+    destId: PropTypes.string
+}

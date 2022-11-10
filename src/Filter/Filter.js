@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Filter.css'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 class Filter extends Component {
     constructor(props) {
@@ -41,3 +42,7 @@ class Filter extends Component {
 }
 
 export default Filter
+
+Filter.propTypes = {
+    filteredDestination: PropTypes.func
+}
