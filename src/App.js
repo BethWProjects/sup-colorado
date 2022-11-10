@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
+import loader from './images/loader.png'
 import Nav from "./Nav/Nav";
 import Filter from "./Filter/Filter";
 import Destinations from "./Destinations/Destinations";
@@ -38,6 +39,12 @@ class App extends Component {
     return (
       <div>
         <Nav />
+        <div className="loader-position">
+        {this.state.loading && <img src={loader} className="loader" alt="blue and orange loader" />}
+        </div>
+        {!this.state.destinations.length && (
+          <h2 className="error-message">{this.state.error}</h2>
+        )}
         <BrowserRouter>
           <Switch>
             <Route
@@ -59,9 +66,7 @@ class App extends Component {
             />
           </Switch>
         </BrowserRouter>
-        {!this.state.destinations.length && (
-          <h2 className="error-message">{this.state.error}</h2>
-        )}
+       
       </div>
     );
   }
