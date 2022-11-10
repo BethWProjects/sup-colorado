@@ -13,6 +13,7 @@ class SUPDetails extends Component {
   }
 
   componentDidMount = async () => {
+    this.setState({ loading: true });
     try {
       const destList = await fetchDestinations();
       const data = await destList.json();
@@ -31,36 +32,53 @@ class SUPDetails extends Component {
   render() {
     const dest = this.state.destination;
     return (
-      <div className="details">
-        <div className="dest-details-container">
+      (this.state.error && <h2 className="error-message"> </h2>) ||
+      (this.state.destination && (
+        <div className="details">
+          <div className="dest-details-container">
+            <div className="image-container">
+              <Link to={"/"}>
+                <button className="details-home-button">Home</button>
+              </Link>
+            </div>
+            <div className="details-container">
+              <div className="details-section">
+                <h1 className="details-title">{dest.title}</h1>
+                <p className="details-location">
+                  <strong>Location</strong> - {dest.location}
+                </p>
+                <p className="details-drive">
+                  <strong>Drive time from Denver</strong> -{" "}
+                  {dest.driveTimeFromDenver}
+                </p>
+                <p className="details-cost">
+                  <strong>Cost</strong> - {dest.cost}
+                </p>
+                <p className="details-type">
+                  <strong>Lake/River?</strong> - {dest.type}
+                </p>
+                <p className="details-pets">
+                  <strong>Pets Allowed?</strong> - {dest.petsAllowed}
+                </p>
+                <p className="details-boats">
+                  <strong>Motorboats Allowed?</strong> -{" "}
+                  {dest.motorBoatsAllowed}
+                </p>
+              </div>
+              <div className="overview-container">
+                <p className="details-overview">{dest.overview}</p>
+              </div>
+            </div>
+          </div>
           <div className="image-container">
-            <Link to={"/"}>
-              <button className="details-home-button">Home</button>
-            </Link>
-          </div>
-          <div className="details-container">
-            <div className="details-section">
-              <h1 className="details-title">{dest.title}</h1>
-              <p className="details-location"><strong>Location</strong> - {dest.location}</p>
-              <p className="details-drive">
-                <strong>Drive time from Denver</strong> - {dest.driveTimeFromDenver}
-              </p>
-              <p className="details-cost"><strong>Cost</strong> - {dest.cost}</p>
-              <p className="details-type"><strong>Lake/River?</strong> - {dest.type}</p>
-              <p className="details-pets"><strong>Pets Allowed?</strong> - {dest.petsAllowed}</p>
-              <p className="details-boats">
-                <strong>Motorboats Allowed?</strong> - {dest.motorBoatsAllowed}
-              </p>
-            </div>
-            <div className="overview-container">
-              <p className="details-overview">{dest.overview}</p>
-            </div>
+            <img
+              className="details-image"
+              src={dest.image}
+              alt={`Paddleboarding the open water at ${dest.title}`}
+            />
           </div>
         </div>
-        <div className="image-container">
-          <img className="details-image" src={dest.image} alt={`Paddleboarding the open water at ${dest.title}`}/>
-        </div>
-      </div>
+      ))
     );
   }
 }

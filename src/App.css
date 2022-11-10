@@ -3,27 +3,33 @@
 }
 
 .error-message {
-  color: red;
+  color: orange;
   text-align: center;
 }
 
-/* .App-logo {
-  height: 40vmin;
+.loader {
+  height: 20vmin;
   pointer-events: none;
+  text-align: center;
+}
+
+.loader-position {
+  display: flex;
+  justify-content: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .loader {
+    animation: loader-spin infinite 10s linear;
   }
 }
 
 
-@keyframes App-logo-spin {
+@keyframes loader-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-} */
+}
