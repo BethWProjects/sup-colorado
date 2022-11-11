@@ -13,7 +13,7 @@ Welcome to SUP Colorado! View the project specs here: [project description](http
 
 ## Deployed Link
 Check out our project here!
-[SUP Colorado]()
+[SUP Colorado](https://sup-colorado.vercel.app/)
 
 Deployed using ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
