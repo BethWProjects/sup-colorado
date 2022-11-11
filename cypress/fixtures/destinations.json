@@ -1,0 +1,28 @@
+{ "destination": [
+    {
+        "id": 1,
+        "title": "Lake Dillon",
+        "image": "https://summitrentals.com/sites/default/files/styles/full_width_banner_image/public/things-to-do-banner-image/paddleboarding_page.jpg",
+        "overview": "This Summit County hotspot is home to several annual regattas, which are a delight to watch. If you love to be in the center of the action, this is your spot. Dillon Reservoir is surrounded by several nearby campgrounds, so if you’re into camping, this is a great spot to visit. The reservoir is strict about safety - one Coast Guard approved PFD for each person must be on board your SUP at all times - so be prepared and stay safe!",
+        "type": "Lake",
+        "petsAllowed": "Yes",
+        "motorBoatsAllowed": "Yes",
+        "cost": "Free",
+        "location": "Dillon, CO",
+        "driveTimeFromDenver": "1.25 hours"
+    },
+    {
+        "id": 2,
+        "title": "Lake Estes",
+        "image": "https://a.cdn-hotels.com/gdcs/production37/d874/9001b3ff-0525-4123-baba-6859017830a8.jpg",
+        "overview": "Lake Estes is a SUP fishing wonderland where anglers of every skill level can find their fair share of trout. In fact, they’ve been hosting an annual fishing derby here since 1986, so you can imagine the lake is well-stocked. Lakes Estes is best for a weekday visit as the park can get very crowded on weekends, especially during the summer months. We recommend visiting in the fall for the best chance of uncrowded waters — the marina stops renting motorized vessels at the end of summer, leaving the water calmer for paddling and fishing. Local regulations do require you to launch your SUP from the marina as well.",
+        "type": "Lake",
+        "petsAllowed": "Yes",
+        "motorBoatsAllowed": "Yes",
+        "cost": "$5",
+        "location": "Estes Park, CO",
+        "driveTimeFromDenver": "1.5 hours"
+    }
+   ]
+}
+  
