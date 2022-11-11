@@ -1,4 +1,4 @@
-describe('empty spec', () => {
+describe('should be able to visit home page and view details', () => {
   beforeEach(() => {
     cy.intercept('GET', 'https://sup-colorado-api.vercel.app/api/v1/destinations', {
       fixture: "destinations.json"
