@@ -1,0 +1,14 @@
+{ "destination": [
+    {
+    "id": 1,
+    "title": "Lake Dillon",
+    "image": "https://summitrentals.com/sites/default/files/styles/full_width_banner_image/public/things-to-do-banner-image/paddleboarding_page.jpg",
+    "overview": "This Summit County hotspot is home to several annual regattas, which are a delight to watch. If you love to be in the center of the action, this is your spot. Dillon Reservoir is surrounded by several nearby campgrounds, so if you’re into camping, this is a great spot to visit. The reservoir is strict about safety - one Coast Guard approved PFD for each person must be on board your SUP at all times - so be prepared and stay safe!",
+    "type": "Lake",
+    "petsAllowed": "Yes",
+    "motorBoatsAllowed": "Yes",
+    "cost": "Free",
+    "location": "Dillon, CO",
+    "driveTimeFromDenver": "1.25 hours"
+    }
+]}
