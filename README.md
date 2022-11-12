@@ -39,6 +39,9 @@ Deployed using ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style
 - Mobile and responsive design
 - 100% Accessibility rating keeping quality testing through the development cycle
 
+## Challenges
+- Creating a 404 page with version 5 react-router-dom. 
+
 ## Contributors
 Beth Wilson [github](https://github.com/BethWProjects) | [LinkedIn](https://www.linkedin.com/in/beth-wilson-92594284/)
 
