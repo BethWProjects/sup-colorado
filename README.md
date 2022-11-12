@@ -37,10 +37,7 @@ Deployed using ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style
 - Making and deploying an express.js api
 - Fully functioning React app
 - Mobile and responsive design
-- 100% Accessibility rating keeping quality testing through our development cycle
-
-### Challenges
-- 
+- 100% Accessibility rating keeping quality testing through the development cycle
 
 ## Contributors
 Beth Wilson [github](https://github.com/BethWProjects) | [LinkedIn](https://www.linkedin.com/in/beth-wilson-92594284/)
