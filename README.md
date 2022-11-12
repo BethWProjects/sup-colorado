@@ -1,7 +1,7 @@
 # SUP Colorado
 
 ## Overview
-Welcome to SUP Colorado! View the project specs here: [project description](https://frontend.turing.edu/projects/module-3/showcase.html).
+Welcome to SUP Colorado! Do you want to paddleboard the Colorado mountains but don't know where to go?  Have you paddled lakes for years, but are looking for some new adventures on moving water?  SUP Colorado is a great place to start, to review a collection of popular lake and river destinations. View the project specs here: [project description](https://frontend.turing.edu/projects/module-3/showcase.html).
 
 ![SUP Colorado](https://user-images.githubusercontent.com/38263992/201487231-90be59cb-f348-45f0-9fd9-97e36363b551.gif)
 
