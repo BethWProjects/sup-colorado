@@ -4,7 +4,7 @@
     align-items: center;
     text-align: center;
     border-radius: 0.5em;
-    border: 2px solid grey;
+    border: 1px solid grey;
     margin: 0;
     box-shadow: 0 0 10px grey;
     position: relative;
@@ -19,7 +19,7 @@
   .image {  
     object-fit: cover;  
     width: 90%;
-    height: 60%;
+    height: 70%;
     min-width: 200px;
     max-width: 340px;
     margin-top: 1vh;
@@ -52,3 +52,8 @@
     overflow: auto;
   }
   
+  @media only screen and (min-width: 270px) and (max-width:700px){
+    .image {
+      height: 60%;
+    }
+  }
