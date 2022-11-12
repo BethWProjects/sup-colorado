@@ -3,13 +3,7 @@
 ## Overview
 Welcome to SUP Colorado! View the project specs here: [project description](https://frontend.turing.edu/projects/module-3/showcase.html).
 
-![SUP Colorado Homepage]()
-
-
-![SUP Colorado Details]()
-
-
-![SUP Filter]()
+![SUP Colorado](https://user-images.githubusercontent.com/38263992/201487231-90be59cb-f348-45f0-9fd9-97e36363b551.gif)
 
 ## Deployed Link
 Check out our project here!
