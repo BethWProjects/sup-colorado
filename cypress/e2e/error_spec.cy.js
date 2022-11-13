@@ -5,6 +5,5 @@ describe('Error handling flows', () => {
     }).as('error')
     cy.visit('http://localhost:3000')
     .get('[class="error-message"]').contains('Sorry, no paddle locations available. Please try again another time!')
-    
   })
 })
