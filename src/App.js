@@ -1,11 +1,12 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import loader from './images/loader.png'
 import Nav from "./Nav/Nav";
 import Filter from "./Filter/Filter";
 import Destinations from "./Destinations/Destinations";
 import SUPDetails from "./SUPDetails/SUPdetails";
+import PageNotFound from "./PageNotFound/PageNotFound";
 import { fetchDestinations } from "./apiCalls";
 
 class App extends Component {
@@ -14,6 +15,7 @@ class App extends Component {
     this.state = {
       destinations: [],
       filteredDestination: "",
+      error: ''
     };
   }
 
@@ -45,7 +47,7 @@ class App extends Component {
         {!this.state.destinations.length && (
           <h2 className="error-message">{this.state.error}</h2>
         )}
-        <BrowserRouter>
+     
           <Switch>
             <Route
               exact
@@ -61,11 +63,12 @@ class App extends Component {
               )}
             />
             <Route
-              path="/:id"
+              exact path="/location/:id"
               render={({ match }) => <SUPDetails destId={match.params.id} />}
-            />
+            />  
+             <Route path='*' component={PageNotFound} />    
           </Switch>
-        </BrowserRouter>
+         
        
       </div>
     );
