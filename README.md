@@ -5,6 +5,7 @@ Welcome to SUP Colorado! Do you want to paddleboard the Colorado mountains but d
 
 ![SUP Colorado](https://user-images.githubusercontent.com/38263992/201487231-90be59cb-f348-45f0-9fd9-97e36363b551.gif)
 ![PageNotFound](https://user-images.githubusercontent.com/38263992/201536894-d5a73316-0d6a-4366-9b15-f8d5ca8e4118.gif)
+![SUPError](https://user-images.githubusercontent.com/38263992/201537110-90047fb9-2af8-4dec-898c-f5a7ee019b99.gif)
 
 ## Deployed Link
 Check out our project here!
